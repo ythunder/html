@@ -61,6 +61,19 @@ case 2: echo "XL码"; break;
 case 3: echo "XXL码"; break;
 }
 ?>
+</td>
+</tr>
+<tr>
+<td>数量</td>
+<td> <?php 
+case 0: echo "0件"; break;
+case 1: echo "1件"; break;
+case 2: echo "2件"; break;
+case 3: echo "3件"; break;
+?>
+</td>
+</tr>
+</table>
 
 </body>
 </html>
