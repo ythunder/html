@@ -40,7 +40,7 @@ if($_POST['Button']) {
 </tr>
 <tr>
 	<td>地址</td><td><?php echo $_POST['addres']; ?></td>
-<tr>
+</tr>
 <tr>
 	<td>性别</td>
 	<td><?php
@@ -54,7 +54,7 @@ case 2: echo "女"; break;
 <tr>
 <td>尺寸</td>
 <td> <?php 
-switch($_POST['尺寸']) {
+switch($_POST['chicun']) {
 case 0: echo "M码"; break;
 case 1: echo "L码"; break;
 case 2: echo "XL码"; break;
@@ -66,10 +66,12 @@ case 3: echo "XXL码"; break;
 <tr>
 <td>数量</td>
 <td> <?php 
+switch($_POST['number']) {
 case 0: echo "0件"; break;
 case 1: echo "1件"; break;
 case 2: echo "2件"; break;
 case 3: echo "3件"; break;
+}
 ?>
 </td>
 </tr>
