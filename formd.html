@@ -12,7 +12,7 @@ TABLE
 </HEAD>
 <BODY>
 
-<FORM name="forml" method="post" action="" align="center">
+<FORM name="forml" method="post" action="formd.php" align="center">
 	<p>姓名：&nbsp;&nbsp;&nbsp;&nbsp;
 	<BR>
 		<INPUT type="text" size=20 name="fname">
@@ -28,12 +28,15 @@ TABLE
 	
 	<P>款&nbsp;&nbsp;式：
 	<BR>
-	<INPUT name="gen" type="radio" class="input" value="男" checked="checked">男款
-	<INPUT name="gen" type="radio" class="input" value="女" checked="checked">女款
- 
+	<SELECT name="gen">
+		<OPTION value="1">男款</OPTION>
+		<OPTION value="2">女款</OPTION>
+	</SELECT>
+	</P>
+
 	<P>尺寸：
 	<SELECT name="chicun">
-	<OPTION value="" selected="selected">M</OPTION>
+	<OPTION value="" selected="selected">尺码</OPTION>
 	<OPTION value=0>M</OPTION>
 	<OPTION value=1>L</OPTION>
 	<OPTION value=2>XL</OPTION>
@@ -42,8 +45,8 @@ TABLE
 	</p>
 	
 	<P>白色数量：
-	<SELECT name="numebr">
-	<OPTION value="" selected="selected">0</OPTION>
+	<SELECT name="number">
+	<OPTION value="" selected="selected">数量</OPTION>
 	<OPTION value=0>0</OPTION>
 	<OPTION value=1>1</OPTION>
 	<OPTION value=2>2</OPTION>
